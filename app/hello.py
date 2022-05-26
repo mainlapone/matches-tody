@@ -5,7 +5,7 @@ from flask_cors import CORS,cross_origin
 import requests
 
 def getData():
-    url = requests.get("https://www.as-goal.com/mm/").text
+    url = requests.get("https://www.york.ac.uk/teaching/cws/wws/webpage1.html").text
     x = url.find("<div id=\"Today\"")
     y = url.find("<div id=\"Tomorrow\"")
     return  url[x:y]
